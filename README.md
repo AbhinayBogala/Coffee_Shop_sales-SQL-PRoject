@@ -1,6 +1,9 @@
 # Coffee_Shop_sales-SQL-Project
 The coffee shop sales data analysis project aims to provide insights into the sales performance of a coffee shop chain operating in three different locations. The project utilizes a combination of SQL, Excel, and Power BI to analyze sales data, identify trends, and make data-driven recommendations to improve business operations.
 
+![Coffee Shop Sales_page-0001](https://github.com/AbhinayBogala/Coffee_Shop_sales-SQL-PRoject/assets/168276269/c98e049d-8b68-4291-aba9-19e3c96fe77d)
+
+
 ## Objective:
 The primary objective of the project is to analyze sales data from the three coffee shop locations to:
 
@@ -39,19 +42,3 @@ A comprehensive report summarizing analysis findings and recommendations.
 ## Conclusion:
 The coffee shop sales data analysis project aims to provide actionable insights into sales performance, enabling the coffee shop chain to make informed decisions to improve business operations and increase profitability.
 
-
-
-
-``` SELECT 
-    MONTH(transaction_date) as month_number,
-    MONTHNAME(transaction_date) as month_name,
-    ROUND(SUM(unit_price * transaction_qty)) AS Total_Sales
-FROM 
-    COFFEE_SHOP_SALES.PUBLIC.COFFEE_SALES
-GROUP BY 
-    MONTH(transaction_date), MONTHNAME(transaction_date)
-ORDER BY 
-    month_number;
-```
-
-![Screenshot 2024-05-16 132835](https://github.com/AbhinayBogala/Coffee_Shop_sales-SQL-PRoject/assets/168276269/a7ffb4c6-3957-4542-a530-e8d10b7bd995)
